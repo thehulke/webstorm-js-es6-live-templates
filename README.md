@@ -1,7 +1,5 @@
 # JS ES6 code completion live templates for Webstorm
 
-----
-
 ## First - A word about contribution & Extending.
 
 - Purpose of this Repo. is to be created as a Webstorm live templates [plugin](http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started.html).
@@ -10,7 +8,6 @@
 
 _Thanks_
 
----
 ## Getting started
 
 - Download the [live templates.xml file](https://github.com/thehulke/webstorm-js-es6-live-templates/blob/master/lg-webstorm-es6-templates.xml).
@@ -18,8 +15,6 @@ _Thanks_
   - [Cross platform guide](https://www.jetbrains.com/help/webstorm/2016.2/project-and-ide-settings.html).
   - OSX: path is `~/Library/Preferences/WebStorm{Version}/templates`.
 - Restart Webstorm.
-
-----
 
 ## Snippets
 
@@ -42,10 +37,6 @@ console.log('%c This is ----> $VAR1$','background: $VAR2$', $VAR1$)
 ```javascript
 console.log('$VAR1$', $VAR2$);
 ```
-
-
-
-
 
 
 ### Declarations
