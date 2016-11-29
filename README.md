@@ -4,7 +4,7 @@
 
 ## First - A word about contribution & Extending.
 
-- Purpose of this Repo. is to be created as a Webstorm live templates plugin.
+- Purpose of this Repo. is to be created as a Webstorm live templates [plugin](http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started.html).
 - If you add more snippets/better parctice existing snippets, **please** create a pull request for this repo., Thanks for users will be added ofc.
 - If you customize this `XML` for your own needs, keep it and have fun =].
 
