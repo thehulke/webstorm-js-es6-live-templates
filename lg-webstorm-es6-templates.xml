@@ -59,7 +59,22 @@
       <option name="TypeScript" value="true" />
     </context>
   </template>
-  <template name="if" value="if ($CONDITION$){&#10;    $ACTION$&#10;} $END$" description="if statement" toReformat="false" toShortenFQNames="true">
+  <template name="if" value="if ($CONDITION$){&#10;    $BODY$&#10;} $END$" description="if statement" toReformat="false" toShortenFQNames="true">
+    <variable name="CONDITION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="BODY" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="el" value="else {&#10;    $BODY$&#10;}&#10;$END$" description="else statement" toReformat="false" toShortenFQNames="true">
+    <variable name="BODY" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="ei" value="else if ($CONDITION$){&#10;    $ACTION$&#10;} $END$" description="eles if statement" toReformat="false" toShortenFQNames="true">
     <variable name="CONDITION" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="ACTION" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -67,24 +82,10 @@
       <option name="TypeScript" value="true" />
     </context>
   </template>
-  <template name="el" value="else {&#10;    $ACTION$&#10;}&#10;$END$" description="else statement" toReformat="false" toShortenFQNames="true">
-    <variable name="ACTION" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="JAVA_SCRIPT" value="true" />
-      <option name="TypeScript" value="true" />
-    </context>
-  </template>
-  <template name="ei" value="else if ($CONDITION$){&#10;    $ACTION$&#10;} &#10;$END$" description="eles if statement" toReformat="false" toShortenFQNames="true">
-    <variable name="CONDITION" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="ACTION" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="JAVA_SCRIPT" value="true" />
-      <option name="TypeScript" value="true" />
-    </context>
-  </template>
-  <template name="for" value="for (let $INDEX$ = 0; $INDEX$ &lt; $VAR1$; $INDEX$++) {&#10;    &#10;}" description="for loop" toReformat="false" toShortenFQNames="true">
+  <template name="for" value="for (let $INDEX$ = 0; $INDEX$ &lt; $VAR1$; $INDEX$++) {&#10;    $BODY$&#10;}&#10;$END$" description="for loop" toReformat="false" toShortenFQNames="true">
     <variable name="INDEX" expression="" defaultValue="&quot;i&quot;" alwaysStopAt="true" />
     <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="BODY" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
       <option name="TypeScript" value="true" />
