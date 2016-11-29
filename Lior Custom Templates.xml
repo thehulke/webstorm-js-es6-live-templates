@@ -1,0 +1,227 @@
+<templateSet group="Lior Custom Templates">
+  <template name="log" value="console.log('$VAR1$', $VAR2$);" description="console.log" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="clog" value="console.log('%c This is ----&gt; $VAR1$','background: $VAR2$', $VAR1$)" description="Colored console.log" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="lime" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="t" value="this.$END$" description="this." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="va" value="var $VAR1$ = $VAR2$;&#10;$END$" description="var assignment" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="v" value="var $VAR1$;&#10;$END$" description="var statement" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="l" value="let $VAR1$;&#10;$END$" description="let statement" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="le" value="let $VAR1$ = $VAR2$;&#10;$END$" description="let assignment" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="co" value="const $VAR1$ = $VAR2$;&#10;$END$" description="const assignment" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;UPPERCASE_UNDERSCROE&quot;" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="if" value="if ($CONDITION$){&#10;    $ACTION$&#10;} $END$" description="if statement" toReformat="false" toShortenFQNames="true">
+    <variable name="CONDITION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ACTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="el" value="else {&#10;    $ACTION$&#10;}&#10;$END$" description="else statement" toReformat="false" toShortenFQNames="true">
+    <variable name="ACTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="ei" value="else if ($CONDITION$){&#10;    $ACTION$&#10;} &#10;$END$" description="eles if statement" toReformat="false" toShortenFQNames="true">
+    <variable name="CONDITION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ACTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="for" value="for (let $INDEX$ = 0; $INDEX$ &lt; $VAR1$; $INDEX$++) {&#10;    &#10;}" description="for loop" toReformat="false" toShortenFQNames="true">
+    <variable name="INDEX" expression="" defaultValue="&quot;i&quot;" alwaysStopAt="true" />
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="fi" value="for (let $VAR1$ in $VAR2$) {&#10;    $ACTION$&#10;}&#10;$END$" description="for in loop" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ACTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="afn" value="function ($ARGUMENTS$) {&#10;    $BODY$&#10;}&#10;$END$" description="anonymous function" toReformat="false" toShortenFQNames="true">
+    <variable name="ARGUMENTS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="BODY" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="fn" value="function $NAME$ ($ARGUMENTS$) {&#10;    $BODY$&#10;}&#10;$END$" description="named function" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ARGUMENTS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="BODY" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="iife" value="(($ARGUMENTS$) =&gt; {&#10;    $BODY$&#10;})($ARGUMENT2$);&#10;$END$" description="immediately-invoked function expression (IIFE)" toReformat="false" toShortenFQNames="true">
+    <variable name="ARGUMENTS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="BODY" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ARGUMENT2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="af" value="($ARGS$) =&gt; $RETURNS$&#10;" description="arrow function" toReformat="false" toShortenFQNames="true">
+    <variable name="ARGS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="RETURNS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="afb" value="($ARGS$) =&gt; {&#10;    $BODY$&#10;}&#10;$END$&#10;" description="arrow function with body" toReformat="false" toShortenFQNames="true">
+    <variable name="ARGS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="BODY" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="map" value=".map(($ITEM$, $INDEX$)=&gt;{&#10;    $BODY$&#10;})$END$" description="map function" toReformat="false" toShortenFQNames="true">
+    <variable name="ITEM" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="INDEX" expression="" defaultValue="&quot;i&quot;" alwaysStopAt="true" />
+    <variable name="BODY" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="filter" value=".filter(($ITEM$)=&gt;{&#10;    $BODY$&#10;})$END$" description="filter function" toReformat="false" toShortenFQNames="true">
+    <variable name="ITEM" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="BODY" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="cx" value="export class $NAME$ {&#10;    $BODY$&#10;}" description="export class [className]" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="BODY" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="cf" value="$NAME$() {&#10;    $BODY$&#10;}" description="class funcion" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="BODY" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="kv" value="$KEY$ : $VALUE$" description="Key value pair" toReformat="false" toShortenFQNames="true">
+    <variable name="KEY" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="get" value="get $NAME$() {&#10;    $BODY$&#10;}" description="getter" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="BODY" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="set" value="set $PROPERTY$($VALUE$) {&#10;    $BODY$&#10;}" description="setter" toReformat="false" toShortenFQNames="true">
+    <variable name="PROPERTY" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="BODY" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="r" value="return $PROPERTY$;" description="return" toReformat="false" toShortenFQNames="true">
+    <variable name="PROPERTY" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="rt" value="return true;" description="return true" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="rn" value="return null;" description="return null" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="rf" value="return false;" description="return false" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+</templateSet>
