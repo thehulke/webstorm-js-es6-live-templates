@@ -4,6 +4,7 @@
 
 ## First - A word about contribution & Extending.
 
+- Purpose of this Repo. is to be created as a Webstorm live templates plugin.
 - If you add more snippets/better parctice existing snippets, **please** create a pull request for this repo., Thanks for users will be added ofc.
 - If you customize this `XML` for your own needs, keep it and have fun =].
 
